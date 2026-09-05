@@ -59,6 +59,7 @@ class LinkedList<T> {
         return current.value;
       }
 
+      // перейти к следующему узлу
       current = current.next;
       i++;
     }
