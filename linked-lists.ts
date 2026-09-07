@@ -66,6 +66,14 @@ class LinkedList<T> {
 
     return undefined;
   }
+
+  calculateLength(node: NodeItem<T> | null = this.head): number {
+    if (node === null) {
+      return 0;
+    }
+
+    return 1 + this.calculateLength(node.next);
+  }
 }
 
 const list = new LinkedList<string>();
